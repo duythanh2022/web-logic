@@ -1,0 +1,41 @@
+@use "../../../sass/variables";
+
+.wrapper {
+  background-color: variables.$main-bg-color;
+  .container {
+    width: 100%;
+    background-color: variables.$txt-main-color;
+    .headerTop {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      align-items: center;
+      margin: 0 20px;
+    }
+    .header-top-title {
+      color: variables.$txt-white;
+    }
+    .header-top-buy {
+      color: variables.$txt-white;
+    }
+  }
+  .header-middle-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    .menu-icons {
+      display: flex;
+      gap: 0 20px;
+      .notification {
+        width: 16px;
+      }
+    }
+  }
+  .multi-level-menu{
+    border-top: 1px solid rgba(112, 112, 112, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
